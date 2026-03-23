@@ -1,16 +1,20 @@
 import java.util.Scanner;
 public class App {
     public static void main(String args[]) throws Exception {
+       String GREEN = "\u001B[32m";
+       String RESET = "\u001B[0m";
+       String BLUE="\u001B[34m";
+       String RED="\u001B[31m";
         int n=0;
         int  command=0;
-        System.out.println("---------------------------------");
-        System.out.println("---   _     _   |   |   |-- -   -");
-        System.out.println(" |  |   | |   | |   |   |--   x ");
-        System.out.println(" |    -     -   |__ |__ |__ -   -");
-        System.out.println("---------------------------------");
-        System.out.println("This the beta version of tollex ");
-        System.out.println("Stay tuned at github ragex123-sudo for updates");
-        System.out.println("A project by Ragex-sudo  Copyright (c) 2026 All rights reserved 2026 ");
+        System.out.println(BLUE+"---------------------------------"+RESET);
+        System.out.println(RED+"---   _     _   |   |   |-- -   -"+RESET);
+        System.out.println(RED+" |  |   | |   | |   |   |--   x "+RESET);
+        System.out.println(RED+" |    -     -   |__ |__ |__ -   -"+RESET);
+        System.out.println(BLUE+"---------------------------------"+RESET);
+        System.out.println(GREEN +"This the beta version of tollex "+RESET);
+        System.out.println(GREEN+"Stay tuned at github ragex123-sudo for updates"+RESET);
+        System.out.println(GREEN+"A project by Ragex-sudo  Copyright (c) 2026 All rights reserved 2026 "+RESET);
         try (Scanner scanner = new Scanner(System.in)) {
             System.out.println("PRESS 1 TO CONTINUE WITH TOOLLEX");
              n=scanner.nextInt();
